@@ -1,10 +1,25 @@
-# DeepLearning
+FACE MASK DETECTION
+
+Abstract
+
+Post covid, many establishments are finding it hard to detect protocol violations, as the time and labour spent for the same incurrs high cost and is highly inefficient. The main aim of this project is to detect violations, like not wearing a mask in a workplace, and notify the officials. The projected is implemented in Python using Keras, Tensorflow and OpenCV. 
+
+Project Overview
+
+An image with a face is fed to a cascade classifier which identifies the Region of Interest (ROI) and give the coordinates of the detected face along with the height and width parameters. This is further resized to a 100x100 image and fed to the pre-trained CNN model, which will provide an output as 'With mask' or 'Without mask'.
+
+Dataset
+
+The dataset consisted of 1376 images, 690 face images with masks and 686 without masks. 
+The original dataset is prepared by Prajna Bhandary and available at Github.
+
+Data Preprocessing
+
+The ROI image is converted to grayscale and then resized to 100x100. This is then reshaped to a 4D array input to be fed to the CNN model. 
+2 categories are created as 'with mask' and 'without mask'.
 
 
-Deep learning (also known as deep structured learning) is part of a broader family of machine learning methods based on artificial neural networks with representation learning. Learning can be supervised, semi-supervised or unsupervised.[1][2][3]
 
-Deep-learning architectures such as deep neural networks, deep belief networks, deep reinforcement learning, recurrent neural networks and convolutional neural networks have been applied to fields including computer vision, speech recognition, natural language processing, machine translation, bioinformatics, drug design, medical image analysis, material inspection and board game programs, where they have produced results comparable to and in some cases surpassing human expert performance.[4][5][6][7]
 
-Artificial neural networks (ANNs) were inspired by information processing and distributed communication nodes in biological systems. ANNs have various differences from biological brains. Specifically, artificial neural networks tend to be static and symbolic, while the biological brain of most living organisms is dynamic (plastic) and analogue.[8][9][10]
 
-The adjective "deep" in deep learning refers to the use of multiple layers in the network. Early work showed that a linear perceptron cannot be a universal classifier, but that a network with a nonpolynomial activation function with one hidden layer of unbounded width can. Deep learning is a modern variation which is concerned with an unbounded number of layers of bounded size, which permits practical application and optimized implementation, while retaining theoretical universality under mild conditions. In deep learning the layers are also permitted to be heterogeneous and to deviate widely from biologically informed connectionist models, for the sake of efficiency, trainability and understandability, whence the "structured" part.
+
